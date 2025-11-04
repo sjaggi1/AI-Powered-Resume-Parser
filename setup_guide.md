@@ -1,4 +1,4 @@
-# AI Resume Parser Setup Guide (Hugging Face Version)
+# AI Resume Parser Setup Guide (Hugging Face Tranformer)
 
 ## ✅ Changes Made
 
