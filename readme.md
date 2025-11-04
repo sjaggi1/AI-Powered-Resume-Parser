@@ -525,44 +525,6 @@ sudo service postgresql status
 sudo -u postgres createdb resume_parser
 ```
 
-## 🎓 Demo Presentation
-
-### Presentation Outline (5 slides max)
-
-1. **Problem Statement**
-   - Traditional parsing failures
-   - Show bad extraction examples
-
-2. **Our Solution**
-   - AI-powered approach
-   - Key differentiators
-
-3. **Live Demo**
-   - Upload diverse resume formats
-   - Show parsing accuracy
-   - Demonstrate job matching
-
-4. **Technical Innovation**
-   - Architecture overview
-   - Performance metrics
-   - Scalability features
-
-5. **Business Value**
-   - Time savings
-   - Accuracy improvements
-   - Integration capabilities
-
-### Demo Tips
-
-- Prepare 3-5 diverse resume samples
-- Have backup screenshots/video
-- Show error handling
-- Demonstrate job matching with real job descriptions
-- Highlight AI-generated insights
-- Show API documentation
-- Mention scalability and production-readiness
-
-## 🏆 Winning Factors
 
 ### What Makes This Project Stand Out
 
@@ -574,14 +536,6 @@ sudo -u postgres createdb resume_parser
 6. **✅ Scalability** - Docker, async, microservices-ready
 7. **✅ Extra Features** - Job matching, analytics, insights
 
-### Evaluation Criteria Alignment
-
-- **Technical Implementation (300 pts)**: ✅ Complete API, AI integration, clean code
-- **Feature Completeness (250 pts)**: ✅ All core + advanced features
-- **Innovation (200 pts)**: ✅ Novel AI approach, unique features
-- **Performance (150 pts)**: ✅ Fast, accurate, scalable
-- **Documentation (100 pts)**: ✅ Comprehensive, clear, professional
-
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -590,13 +544,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📧 Contact
-
-For questions or support:
-- Email: ai-hackathon2025@geminisolutions.com
-- Discord: [Join our channel](https://discord.gg/WZvBbBZa)
-
 ---
-
-
-*Remember: Focus on demonstrating value - accuracy, speed, and intelligent features!*
