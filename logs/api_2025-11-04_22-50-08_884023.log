@@ -1,0 +1,28 @@
+2025-11-04 22:50:08.896 | INFO     | src.main:lifespan:29 - Starting up AI Resume Parser API...
+2025-11-04 22:50:08.896 | INFO     | src.main:lifespan:30 - Environment: development
+2025-11-04 22:50:08.896 | INFO     | src.main:lifespan:31 - API Version: 1.0.0
+2025-11-04 22:50:08.959 | INFO     | src.main:lifespan:36 - Database tables created/verified successfully
+2025-11-04 22:50:17.524 | INFO     | src.main:log_requests:106 - Incoming request: POST /api/v1/resumes/upload
+2025-11-04 22:50:17.550 | INFO     | src.api.routes.resumes:upload_resume:167 - Processing resume upload: Resume1.general.pdf (ID: 9c75505e-6336-47c0-877d-41dafc1e75ff)
+2025-11-04 22:50:17.551 | INFO     | src.services.parser_service:parse_resume:47 - Starting resume parsing: Resume1.general.pdf
+2025-11-04 22:50:17.557 | INFO     | src.services.parser_service:parse_resume:50 - Step 1: Extracting text from document...
+2025-11-04 22:50:17.558 | INFO     | src.utils.pdf_extractor:extract_text_from_pdf:37 - Attempting text extraction with pdfplumber...
+2025-11-04 22:50:18.471 | INFO     | src.utils.pdf_extractor:extract_text_from_pdf:41 - Successfully extracted 4113 characters with pdfplumber
+2025-11-04 22:50:18.473 | INFO     | src.services.parser_service:parse_resume:56 - Extracted 4113 characters of text
+2025-11-04 22:50:18.474 | INFO     | src.services.parser_service:parse_resume:59 - Step 2: Parsing with AI (GPT-4)...
+2025-11-04 22:50:58.380 | INFO     | src.services.parser_service:parse_resume:65 - Step 3: Enhancing with AI insights...
+2025-11-04 22:50:58.381 | INFO     | src.services.ai_service:enhance_with_ai:27 - Enhancing text using FLAN-T5 lightweight model...
+2025-11-04 22:51:07.858 | INFO     | src.services.parser_service:parse_resume:69 - Step 4: Calculating metadata...
+2025-11-04 22:51:07.860 | INFO     | src.services.parser_service:parse_resume:95 - Resume parsing completed in 50.31s
+2025-11-04 22:51:07.976 | ERROR    | src.api.routes.resumes:upload_resume:176 - Resume validation failed: 3 validation errors for Resume
+name
+  Field required [type=missing, input_value={'metadata': {'fileName':...': 0.4, 'skills': 0.75}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.5/v/missing
+contact_info
+  Field required [type=missing, input_value={'metadata': {'fileName':...': 0.4, 'skills': 0.75}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.5/v/missing
+summary
+  Input should be a valid string [type=string_type, input_value={'text': 'SIMRAN JAGGI Ch...YearsOfExperience': 0.0}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.5/v/string_type
+2025-11-04 22:51:07.989 | INFO     | src.main:log_requests:116 - Request completed: POST /api/v1/resumes/upload Status: 422 Time: 50.464s
+2025-11-04 22:54:19.063 | INFO     | src.main:lifespan:43 - Shutting down AI Resume Parser API...

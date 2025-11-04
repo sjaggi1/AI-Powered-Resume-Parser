@@ -1,0 +1,8 @@
+2025-11-04 20:43:38.307 | INFO     | src.main:lifespan:29 - Starting up AI Resume Parser API...
+2025-11-04 20:43:38.307 | INFO     | src.main:lifespan:30 - Environment: development
+2025-11-04 20:43:38.307 | INFO     | src.main:lifespan:31 - API Version: 1.0.0
+2025-11-04 20:43:38.341 | INFO     | src.main:lifespan:36 - Database tables created/verified successfully
+2025-11-04 20:43:42.665 | INFO     | src.main:log_requests:106 - Incoming request: POST /api/v1/resumes/upload
+2025-11-04 20:43:42.668 | ERROR    | src.api.routes.resumes:upload_resume:126 - Upload failed: validate_file_size() takes 1 positional argument but 2 were given
+2025-11-04 20:43:42.668 | INFO     | src.main:log_requests:116 - Request completed: POST /api/v1/resumes/upload Status: 500 Time: 0.003s
+2025-11-04 20:46:18.170 | INFO     | src.main:lifespan:43 - Shutting down AI Resume Parser API...

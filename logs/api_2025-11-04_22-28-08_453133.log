@@ -1,0 +1,13 @@
+2025-11-04 22:28:08.456 | INFO     | src.main:lifespan:29 - Starting up AI Resume Parser API...
+2025-11-04 22:28:08.456 | INFO     | src.main:lifespan:30 - Environment: development
+2025-11-04 22:28:08.456 | INFO     | src.main:lifespan:31 - API Version: 1.0.0
+2025-11-04 22:28:08.506 | INFO     | src.main:lifespan:36 - Database tables created/verified successfully
+2025-11-04 22:28:18.788 | INFO     | src.main:log_requests:106 - Incoming request: POST /api/v1/resumes/upload
+2025-11-04 22:28:18.792 | INFO     | src.api.routes.resumes:upload_resume:83 - Processing resume upload: UK_CPRT_Resume.pdf (ID: 6838feed-04d2-4a5b-964b-1d209ff908a6)
+2025-11-04 22:28:18.794 | ERROR    | src.api.routes.resumes:upload_resume:92 - Resume validation failed: src.utils.validators.Resume() argument after ** must be a mapping, not coroutine
+2025-11-04 22:28:18.798 | INFO     | src.main:log_requests:116 - Request completed: POST /api/v1/resumes/upload Status: 422 Time: 0.010s
+2025-11-04 22:28:45.787 | INFO     | src.main:log_requests:106 - Incoming request: POST /api/v1/resumes/upload
+2025-11-04 22:28:45.803 | INFO     | src.api.routes.resumes:upload_resume:83 - Processing resume upload: UK_CPRT_Resume.pdf (ID: 49c4df4e-5b19-4de6-abfc-fbd650162401)
+2025-11-04 22:28:45.817 | ERROR    | src.api.routes.resumes:upload_resume:92 - Resume validation failed: src.utils.validators.Resume() argument after ** must be a mapping, not coroutine
+2025-11-04 22:28:45.826 | INFO     | src.main:log_requests:116 - Request completed: POST /api/v1/resumes/upload Status: 422 Time: 0.039s
+2025-11-04 22:31:48.214 | INFO     | src.main:lifespan:43 - Shutting down AI Resume Parser API...

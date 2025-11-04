@@ -1,0 +1,24 @@
+2025-11-04 19:51:02.362 | INFO     | src.main:lifespan:29 - Starting up AI Resume Parser API...
+2025-11-04 19:51:02.363 | INFO     | src.main:lifespan:30 - Environment: development
+2025-11-04 19:51:02.363 | INFO     | src.main:lifespan:31 - API Version: 1.0.0
+2025-11-04 19:51:02.397 | INFO     | src.main:lifespan:36 - Database tables created/verified successfully
+2025-11-04 19:55:57.923 | INFO     | src.main:log_requests:106 - Incoming request: GET /docs
+2025-11-04 19:55:57.924 | INFO     | src.main:log_requests:116 - Request completed: GET /docs Status: 200 Time: 0.001s
+2025-11-04 19:55:58.611 | INFO     | src.main:log_requests:106 - Incoming request: GET /openapi.json
+2025-11-04 19:55:58.624 | INFO     | src.main:log_requests:116 - Request completed: GET /openapi.json Status: 200 Time: 0.012s
+2025-11-04 19:56:31.340 | INFO     | src.main:log_requests:106 - Incoming request: GET /api/v1/health
+2025-11-04 19:56:31.348 | WARNING  | src.api.routes.health:health_check:36 - Database health check failed: Not an executable object: 'SELECT 1'
+2025-11-04 19:56:31.351 | INFO     | src.main:log_requests:116 - Request completed: GET /api/v1/health Status: 200 Time: 0.011s
+2025-11-04 19:57:14.511 | INFO     | src.main:log_requests:106 - Incoming request: POST /api/v1/resumes/upload
+2025-11-04 19:57:14.622 | ERROR    | src.api.routes.resumes:upload_resume:126 - Upload failed: 'Settings' object has no attribute 'MAX_FILE_SIZE'
+2025-11-04 19:57:14.622 | INFO     | src.main:log_requests:116 - Request completed: POST /api/v1/resumes/upload Status: 500 Time: 0.111s
+2025-11-04 19:57:49.914 | INFO     | src.main:log_requests:106 - Incoming request: POST /api/v1/resumes/upload
+2025-11-04 19:57:50.034 | ERROR    | src.api.routes.resumes:upload_resume:126 - Upload failed: 'Settings' object has no attribute 'MAX_FILE_SIZE'
+2025-11-04 19:57:50.036 | INFO     | src.main:log_requests:116 - Request completed: POST /api/v1/resumes/upload Status: 500 Time: 0.122s
+2025-11-04 19:58:44.089 | INFO     | src.main:log_requests:106 - Incoming request: POST /api/v1/resumes/upload
+2025-11-04 19:58:44.095 | ERROR    | src.api.routes.resumes:upload_resume:126 - Upload failed: 'Settings' object has no attribute 'MAX_FILE_SIZE'
+2025-11-04 19:58:44.099 | INFO     | src.main:log_requests:116 - Request completed: POST /api/v1/resumes/upload Status: 500 Time: 0.010s
+2025-11-04 19:59:57.980 | INFO     | src.main:log_requests:106 - Incoming request: POST /api/v1/resumes/upload
+2025-11-04 19:59:57.982 | ERROR    | src.api.routes.resumes:upload_resume:126 - Upload failed: 'Settings' object has no attribute 'MAX_FILE_SIZE'
+2025-11-04 19:59:58.002 | INFO     | src.main:log_requests:116 - Request completed: POST /api/v1/resumes/upload Status: 500 Time: 0.021s
+2025-11-04 20:01:00.164 | INFO     | src.main:lifespan:43 - Shutting down AI Resume Parser API...

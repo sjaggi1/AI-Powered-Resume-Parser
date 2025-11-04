@@ -1,0 +1,16 @@
+2025-11-04 22:01:06.205 | INFO     | src.main:lifespan:29 - Starting up AI Resume Parser API...
+2025-11-04 22:01:06.209 | INFO     | src.main:lifespan:30 - Environment: development
+2025-11-04 22:01:06.217 | INFO     | src.main:lifespan:31 - API Version: 1.0.0
+2025-11-04 22:01:06.263 | INFO     | src.main:lifespan:36 - Database tables created/verified successfully
+2025-11-04 22:01:11.954 | INFO     | src.main:log_requests:106 - Incoming request: POST /api/v1/resumes/upload
+2025-11-04 22:01:11.965 | INFO     | src.api.routes.resumes:upload_resume:86 - Processing resume upload: Resume1.general.pdf (ID: 45a0697a-9b3f-45a7-b157-bfef5a27b9cf)
+2025-11-04 22:01:11.976 | INFO     | src.services.parser_service:parse_resume:47 - Starting resume parsing: Resume1.general.pdf
+2025-11-04 22:01:12.142 | INFO     | src.services.parser_service:parse_resume:50 - Step 1: Extracting text from document...
+2025-11-04 22:01:12.143 | INFO     | src.utils.pdf_extractor:extract_text_from_pdf:37 - Attempting text extraction with pdfplumber...
+2025-11-04 22:01:12.432 | INFO     | src.utils.pdf_extractor:extract_text_from_pdf:41 - Successfully extracted 4113 characters with pdfplumber
+2025-11-04 22:01:12.433 | INFO     | src.services.parser_service:parse_resume:56 - Extracted 4113 characters of text
+2025-11-04 22:01:12.433 | INFO     | src.services.parser_service:parse_resume:59 - Step 2: Parsing with AI (GPT-4)...
+2025-11-04 22:02:11.656 | ERROR    | src.services.parser_service:parse_resume:100 - Resume parsing failed: object dict can't be used in 'await' expression
+2025-11-04 22:02:11.675 | ERROR    | src.api.routes.resumes:upload_resume:114 - Resume parsing failed: object dict can't be used in 'await' expression
+2025-11-04 22:02:11.724 | INFO     | src.main:log_requests:116 - Request completed: POST /api/v1/resumes/upload Status: 500 Time: 59.769s
+2025-11-04 22:03:50.357 | INFO     | src.main:lifespan:43 - Shutting down AI Resume Parser API...

@@ -1,0 +1,8 @@
+2025-11-04 20:26:43.367 | INFO     | src.main:lifespan:29 - Starting up AI Resume Parser API...
+2025-11-04 20:26:43.368 | INFO     | src.main:lifespan:30 - Environment: development
+2025-11-04 20:26:43.368 | INFO     | src.main:lifespan:31 - API Version: 1.0.0
+2025-11-04 20:26:43.414 | INFO     | src.main:lifespan:36 - Database tables created/verified successfully
+2025-11-04 20:26:49.221 | INFO     | src.main:log_requests:106 - Incoming request: POST /api/v1/resumes/upload
+2025-11-04 20:26:49.229 | ERROR    | src.api.routes.resumes:upload_resume:126 - Upload failed: 'Settings' object has no attribute 'ALLOWED_EXTENSIONS'
+2025-11-04 20:26:49.230 | INFO     | src.main:log_requests:116 - Request completed: POST /api/v1/resumes/upload Status: 500 Time: 0.010s
+2025-11-04 20:27:09.713 | INFO     | src.main:lifespan:43 - Shutting down AI Resume Parser API...

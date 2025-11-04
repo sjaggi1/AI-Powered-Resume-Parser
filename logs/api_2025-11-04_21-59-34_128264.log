@@ -1,0 +1,4 @@
+2025-11-04 21:59:34.167 | INFO     | src.main:lifespan:29 - Starting up AI Resume Parser API...
+2025-11-04 21:59:34.170 | INFO     | src.main:lifespan:30 - Environment: development
+2025-11-04 21:59:34.176 | INFO     | src.main:lifespan:31 - API Version: 1.0.0
+2025-11-04 21:59:34.332 | INFO     | src.main:lifespan:36 - Database tables created/verified successfully

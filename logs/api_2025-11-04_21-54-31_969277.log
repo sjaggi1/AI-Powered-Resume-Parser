@@ -1,0 +1,33 @@
+2025-11-04 21:54:31.990 | INFO     | src.main:lifespan:29 - Starting up AI Resume Parser API...
+2025-11-04 21:54:31.990 | INFO     | src.main:lifespan:30 - Environment: development
+2025-11-04 21:54:31.990 | INFO     | src.main:lifespan:31 - API Version: 1.0.0
+2025-11-04 21:54:32.227 | INFO     | src.main:lifespan:36 - Database tables created/verified successfully
+2025-11-04 21:54:38.563 | INFO     | src.main:log_requests:106 - Incoming request: GET /
+2025-11-04 21:54:38.566 | INFO     | src.main:log_requests:116 - Request completed: GET / Status: 200 Time: 0.002s
+2025-11-04 21:54:41.664 | INFO     | src.main:log_requests:106 - Incoming request: GET /
+2025-11-04 21:54:41.670 | INFO     | src.main:log_requests:116 - Request completed: GET / Status: 200 Time: 0.006s
+2025-11-04 21:54:42.447 | INFO     | src.main:log_requests:106 - Incoming request: GET /favicon.ico
+2025-11-04 21:54:42.456 | INFO     | src.main:log_requests:116 - Request completed: GET /favicon.ico Status: 404 Time: 0.009s
+2025-11-04 21:56:06.138 | INFO     | src.main:log_requests:106 - Incoming request: GET /
+2025-11-04 21:56:06.140 | INFO     | src.main:log_requests:116 - Request completed: GET / Status: 200 Time: 0.002s
+2025-11-04 21:56:15.037 | INFO     | src.main:log_requests:106 - Incoming request: GET /
+2025-11-04 21:56:15.039 | INFO     | src.main:log_requests:116 - Request completed: GET / Status: 200 Time: 0.001s
+2025-11-04 21:56:48.654 | INFO     | src.main:log_requests:106 - Incoming request: GET /docs
+2025-11-04 21:56:48.655 | INFO     | src.main:log_requests:116 - Request completed: GET /docs Status: 200 Time: 0.002s
+2025-11-04 21:56:48.921 | INFO     | src.main:log_requests:106 - Incoming request: GET /openapi.json
+2025-11-04 21:56:49.339 | INFO     | src.main:log_requests:116 - Request completed: GET /openapi.json Status: 200 Time: 0.418s
+2025-11-04 21:57:03.751 | INFO     | src.main:log_requests:106 - Incoming request: GET /api/v1/health
+2025-11-04 21:57:03.755 | WARNING  | src.api.routes.health:health_check:36 - Database health check failed: Not an executable object: 'SELECT 1'
+2025-11-04 21:57:03.757 | INFO     | src.main:log_requests:116 - Request completed: GET /api/v1/health Status: 200 Time: 0.006s
+2025-11-04 21:57:13.192 | INFO     | src.main:log_requests:106 - Incoming request: POST /api/v1/resumes/upload
+2025-11-04 21:57:13.231 | INFO     | src.api.routes.resumes:upload_resume:86 - Processing resume upload: Resume1.general.pdf (ID: 39b7837c-1fd1-4cde-9560-8ea527238dd5)
+2025-11-04 21:57:13.232 | INFO     | src.services.parser_service:parse_resume:47 - Starting resume parsing: Resume1.general.pdf
+2025-11-04 21:57:13.233 | INFO     | src.services.parser_service:parse_resume:50 - Step 1: Extracting text from document...
+2025-11-04 21:57:13.234 | INFO     | src.utils.pdf_extractor:extract_text_from_pdf:37 - Attempting text extraction with pdfplumber...
+2025-11-04 21:57:13.525 | INFO     | src.utils.pdf_extractor:extract_text_from_pdf:41 - Successfully extracted 4113 characters with pdfplumber
+2025-11-04 21:57:13.526 | INFO     | src.services.parser_service:parse_resume:56 - Extracted 4113 characters of text
+2025-11-04 21:57:13.526 | INFO     | src.services.parser_service:parse_resume:59 - Step 2: Parsing with AI (GPT-4)...
+2025-11-04 21:57:13.527 | ERROR    | src.services.parser_service:parse_resume:100 - Resume parsing failed: 'LightweightAIService' object has no attribute 'parse_resume'
+2025-11-04 21:57:13.527 | ERROR    | src.api.routes.resumes:upload_resume:114 - Resume parsing failed: 'LightweightAIService' object has no attribute 'parse_resume'
+2025-11-04 21:57:13.529 | INFO     | src.main:log_requests:116 - Request completed: POST /api/v1/resumes/upload Status: 500 Time: 0.337s
+2025-11-04 21:58:29.040 | INFO     | src.main:lifespan:43 - Shutting down AI Resume Parser API...

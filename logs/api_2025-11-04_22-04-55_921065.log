@@ -1,0 +1,11 @@
+2025-11-04 22:04:55.927 | INFO     | src.main:lifespan:29 - Starting up AI Resume Parser API...
+2025-11-04 22:04:55.928 | INFO     | src.main:lifespan:30 - Environment: development
+2025-11-04 22:04:55.928 | INFO     | src.main:lifespan:31 - API Version: 1.0.0
+2025-11-04 22:04:56.043 | INFO     | src.main:lifespan:36 - Database tables created/verified successfully
+2025-11-04 22:05:01.437 | INFO     | src.main:log_requests:106 - Incoming request: POST /api/v1/resumes/upload
+2025-11-04 22:05:01.488 | INFO     | src.api.routes.resumes:upload_resume:86 - Processing resume upload: Resume1.general.pdf (ID: 56f0b36a-4cbe-4a69-b54a-d05d5c1cd6f3)
+2025-11-04 22:05:01.489 | INFO     | src.main:log_requests:116 - Request completed: POST /api/v1/resumes/upload Status: 202 Time: 0.052s
+2025-11-04 22:05:28.711 | INFO     | src.main:log_requests:106 - Incoming request: GET /api/v1/resumes/56f0b36a-4cbe-4a69-b54a-d05d5c1cd6f3
+2025-11-04 22:05:28.713 | ERROR    | src.api.routes.resumes:get_resume:163 - Error retrieving resume 56f0b36a-4cbe-4a69-b54a-d05d5c1cd6f3: 'coroutine' object is not a mapping
+2025-11-04 22:05:28.713 | INFO     | src.main:log_requests:116 - Request completed: GET /api/v1/resumes/56f0b36a-4cbe-4a69-b54a-d05d5c1cd6f3 Status: 500 Time: 0.003s
+2025-11-04 22:11:51.099 | INFO     | src.main:lifespan:43 - Shutting down AI Resume Parser API...

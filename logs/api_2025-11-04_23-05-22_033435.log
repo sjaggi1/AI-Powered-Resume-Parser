@@ -1,0 +1,34 @@
+2025-11-04 23:05:22.043 | INFO     | src.main:lifespan:29 - Starting up AI Resume Parser API...
+2025-11-04 23:05:22.044 | INFO     | src.main:lifespan:30 - Environment: development
+2025-11-04 23:05:22.044 | INFO     | src.main:lifespan:31 - API Version: 1.0.0
+2025-11-04 23:05:22.091 | INFO     | src.main:lifespan:36 - Database tables created/verified successfully
+2025-11-04 23:05:28.003 | INFO     | src.main:log_requests:106 - Incoming request: POST /api/v1/resumes/upload
+2025-11-04 23:05:28.025 | INFO     | src.api.routes.resumes:upload_resume:167 - Processing resume upload: Resume1.general.pdf (ID: 62a54534-d9e3-48d3-9d70-0ac23e7eed7d)
+2025-11-04 23:05:28.036 | INFO     | src.services.parser_service:parse_resume:47 - Starting resume parsing: Resume1.general.pdf
+2025-11-04 23:05:28.038 | INFO     | src.services.parser_service:parse_resume:50 - Step 1: Extracting text from document...
+2025-11-04 23:05:28.065 | INFO     | src.utils.pdf_extractor:extract_text_from_pdf:37 - Attempting text extraction with pdfplumber...
+2025-11-04 23:05:29.204 | INFO     | src.utils.pdf_extractor:extract_text_from_pdf:41 - Successfully extracted 4113 characters with pdfplumber
+2025-11-04 23:05:29.237 | INFO     | src.services.parser_service:parse_resume:56 - Extracted 4113 characters of text
+2025-11-04 23:05:29.266 | INFO     | src.services.parser_service:parse_resume:59 - Step 2: Parsing with AI (GPT-4)...
+2025-11-04 23:06:11.316 | INFO     | src.services.parser_service:parse_resume:65 - Step 3: Enhancing with AI insights...
+2025-11-04 23:06:11.318 | INFO     | src.services.ai_service:enhance_with_ai:27 - Enhancing text using FLAN-T5 lightweight model...
+2025-11-04 23:06:19.848 | INFO     | src.services.parser_service:parse_resume:69 - Step 4: Calculating metadata...
+2025-11-04 23:06:19.848 | INFO     | src.services.parser_service:parse_resume:95 - Resume parsing completed in 51.81s
+2025-11-04 23:06:19.970 | INFO     | src.main:log_requests:116 - Request completed: POST /api/v1/resumes/upload Status: 202 Time: 51.967s
+2025-11-04 23:06:50.046 | INFO     | src.main:log_requests:106 - Incoming request: GET /api/v1/resumes/62a54534-d9e3-48d3-9d70-0ac23e7eed7d
+2025-11-04 23:06:50.058 | INFO     | src.main:log_requests:116 - Request completed: GET /api/v1/resumes/62a54534-d9e3-48d3-9d70-0ac23e7eed7d Status: 200 Time: 0.012s
+2025-11-04 23:07:07.663 | INFO     | src.main:log_requests:106 - Incoming request: PUT /api/v1/resumes/62a54534-d9e3-48d3-9d70-0ac23e7eed7d
+2025-11-04 23:07:07.690 | INFO     | src.main:log_requests:116 - Request completed: PUT /api/v1/resumes/62a54534-d9e3-48d3-9d70-0ac23e7eed7d Status: 200 Time: 0.028s
+2025-11-04 23:08:14.602 | INFO     | src.main:log_requests:106 - Incoming request: PUT /api/v1/resumes/62a54534-d9e3-48d3-9d70-0ac23e7eed7d
+2025-11-04 23:08:14.606 | INFO     | src.main:log_requests:116 - Request completed: PUT /api/v1/resumes/62a54534-d9e3-48d3-9d70-0ac23e7eed7d Status: 200 Time: 0.004s
+2025-11-04 23:08:40.814 | INFO     | src.main:log_requests:106 - Incoming request: GET /api/v1/resumes/62a54534-d9e3-48d3-9d70-0ac23e7eed7d/status
+2025-11-04 23:08:40.817 | INFO     | src.main:log_requests:116 - Request completed: GET /api/v1/resumes/62a54534-d9e3-48d3-9d70-0ac23e7eed7d/status Status: 200 Time: 0.003s
+2025-11-04 23:08:57.833 | INFO     | src.main:log_requests:106 - Incoming request: GET /api/v1/matching
+2025-11-04 23:08:57.838 | INFO     | src.main:log_requests:116 - Request completed: GET /api/v1/matching Status: 200 Time: 0.005s
+2025-11-04 23:09:06.571 | INFO     | src.main:log_requests:106 - Incoming request: GET /api/v1/analytics
+2025-11-04 23:09:06.576 | INFO     | src.main:log_requests:116 - Request completed: GET /api/v1/analytics Status: 200 Time: 0.005s
+2025-11-04 23:09:20.421 | INFO     | src.main:log_requests:106 - Incoming request: DELETE /api/v1/resumes/62a54534-d9e3-48d3-9d70-0ac23e7eed7d
+2025-11-04 23:09:20.437 | INFO     | src.api.routes.resumes:delete_resume:253 - Resume 62a54534-d9e3-48d3-9d70-0ac23e7eed7d deleted successfully
+2025-11-04 23:09:20.444 | INFO     | src.main:log_requests:116 - Request completed: DELETE /api/v1/resumes/62a54534-d9e3-48d3-9d70-0ac23e7eed7d Status: 204 Time: 0.023s
+2025-11-04 23:09:20.468 | ERROR    | src.main:internal_error_handler:141 - Internal server error: Response content longer than Content-Length
+2025-11-04 23:10:31.073 | INFO     | src.main:lifespan:43 - Shutting down AI Resume Parser API...
